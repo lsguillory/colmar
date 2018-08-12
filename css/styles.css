@@ -151,10 +151,13 @@ aside {
   font-size: 1.5rem;
   border: 0;
   text-align: center;
-  background-color: #89adfc;
+  background-color: #94c5fc;
   color: white;
 }
 /*========================  CAMPUS  =================== */
+.mobile {
+  display: none;
+}
 #campus {
   padding-bottom: 2rem;
   padding-top: 3rem;
@@ -198,14 +201,10 @@ img.left {
 }
 
 .block-text a {
-  color: #5121fd;
+  color: #0861c0;
   width: 6.5rem;
   font-size: 1.2rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.block-text h4.guest {
   padding-bottom: 0.5rem;
 }
 
@@ -228,11 +227,9 @@ img.left {
 h2.header {
   text-align: center;
   padding-top: 3.5rem;
+  padding-bottom: 2rem;
 }
 
-.mobile {
-  display: none;
-}
 .courses {
   flex-wrap: wrap;
   margin-left: 4.5rem;
@@ -243,11 +240,28 @@ h2.header {
 
 .course-cards {
   width: 30%;
-  margin: 2rem 2rem 1.5rem 0;
 }
 
-.card-text {
+.card-txt {
   padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card-txt h3 {
+  padding-top: 1rem;
+}
+.card-txt h5 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.fa-code,
+.fa-image,
+.fa-pencil,
+.fa-database,
+.fa-bar-chart,
+.fa-shopping-cart {
+  color: white;
 }
 
 .card-img {
@@ -331,8 +345,9 @@ h2.header {
   #campus-left {
     width: 100%;
   }
+
   .aside-blocks {
-    flex-flow: wrap column;
+    flex-flow: column wrap;
     height: auto;
     border: 0;
   }
@@ -354,4 +369,43 @@ h2.header {
     margin-left: 1rem;
     margin-bottom: 1rem;
   }
+
+  /*  online */
+  .courses {
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+
+  .course-cards .card-img-container,
+  .course-cards .card-txt h5,
+  .course-cards .card-txt h4 {
+    display: none;
+  }
+  .courses .course-cards {
+    width: 100%;
+  }
+
+  .card-text {
+    display: flex;
+  }
+
+  .course-cards .card-txt h3 {
+    background-color: #94c5fc;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  /*.course-cards .card-text {
+    width: 100%;
+  }
+
+  .card-text  {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .card-text h5 {
+    flex-flow: column wrap;
+    align-items: baseline;
+  }*/
 }

@@ -1,0 +1,357 @@
+/*  Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.4;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.015rem;
+  font-family: "Roboto", sans-serif;
+  color: #22313f;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.015rem;
+  font-family: "Roboto", sans-serif;
+  color: #22313f;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+  font-family: "Roboto", sans-serif;
+  color: #22313f;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.015rem;
+  font-family: "Roboto", sans-serif;
+  color: #22313f;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.015rem;
+  font-family: "Roboto", sans-serif;
+  color: #22313f;
+}
+
+a {
+  color: #666969;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.left {
+  margin-left: 1.5rem;
+}
+
+a:hover {
+  transition: all 1s ease;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: white;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  height: 64px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+  padding-right: 24px;
+}
+
+#navbar-menu {
+  margin-left: 1.5rem;
+  margin-right: 3rem;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+#navbar-menu a {
+  padding: 16px;
+}
+
+#logo2 {
+  color: #858888;
+}
+
+/*  Mobile NAV */
+#mobile-nav {
+  display: none;
+}
+
+/*  Main */
+main {
+  position: relative;
+  padding-top: 4rem;
+}
+
+/*  BANNER */
+#banner {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  width: 100%;
+  background-color: #abc4fc;
+}
+
+#banner-left {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+#banner-left img {
+  width: 100%;
+}
+
+aside {
+  flex-direction: column;
+  padding: 0 5rem 0 2rem;
+  width: 40%;
+}
+
+#start h1 {
+  padding-top: 8rem;
+}
+
+#start p {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+#button {
+  margin-top: 3rem;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  border: 0;
+  text-align: center;
+  background-color: #89adfc;
+  color: white;
+}
+/*========================  CAMPUS  =================== */
+#campus {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  width: 100%;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+#campus-left {
+  width: 60%;
+}
+
+img.left {
+  width: 100%;
+}
+#campus-right {
+  width: 40%;
+}
+
+#campus-left-btm {
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+}
+
+.aside-blocks .block-text {
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 65%;
+  padding-left: 3rem;
+}
+
+.image-block {
+  width: 35%;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.block-text a {
+  color: #5121fd;
+  width: 6.5rem;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.block-text h4.guest {
+  padding-bottom: 0.5rem;
+}
+
+.block-text a:hover {
+  color: white;
+}
+
+#campus-left-btm blockquote {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/*========================== LEARNING ========================= */
+
+#online {
+  background-image: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+h2.header {
+  text-align: center;
+  padding-top: 3.5rem;
+}
+
+.mobile {
+  display: none;
+}
+.courses {
+  flex-wrap: wrap;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  padding-left: 2.2rem;
+  justify-content: space-around;
+}
+
+.course-cards {
+  width: 30%;
+  margin: 2rem 2rem 1.5rem 0;
+}
+
+.card-text {
+  padding-left: 1rem;
+}
+
+.card-img {
+  height: auto;
+  width: 100%;
+}
+
+/*==========================  MOBILE  ========================= */
+@media only screen and (max-width: 820px) {
+  #mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #mobile-nav img {
+    width: 2.7rem;
+  }
+
+  #mobile-nav a {
+    padding: 15px;
+  }
+
+  #navbar-menu {
+    display: none;
+  }
+
+  /*  BANNER */
+  #banner {
+    flex-wrap: wrap;
+  }
+  #banner-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  #banner-left img {
+    width: 100%;
+    overflow: hidden;
+  }
+  aside {
+    flex-flow: wrap column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #banner img {
+    width: 100%;
+  }
+
+  #start h1 {
+    padding-top: 2rem;
+  }
+
+  /*  Campus */
+
+  #campus {
+    padding-bottom: 1rem;
+  }
+
+  #campus-left {
+    display: none;
+  }
+
+  #campus-right {
+    width: 100%;
+  }
+
+  img.desk {
+    display: none;
+  }
+
+  img.mobile {
+    display: initial;
+  }
+
+  #campus-left {
+    width: 100%;
+  }
+  .aside-blocks {
+    flex-flow: wrap column;
+    height: auto;
+    border: 0;
+  }
+
+  .image-block {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .aside-blocks .block-text {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .block-text {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}

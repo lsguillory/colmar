@@ -269,12 +269,81 @@ h2.header {
   width: 100%;
 }
 
+/*========================== COMPANIES (thesis)  ========================= */
+
+#companies {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  width: 100%;
+  padding-top: 2rem;
+}
+
+#companies h2 {
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#video-txt h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#thesis-left {
+  width: 60%;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+.thesis-block {
+  padding-top: 0.5rem;
+}
+
+#thesis-video video {
+  width: 100%;
+}
+aside #thesis-right {
+  flex-direction: column;
+}
+.thesis-block .thesis-txt {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thesis-txt {
+  padding-left: 1rem;
+  width: 65%;
+}
+.thesis-img-block {
+  padding: 1rem;
+  width: 35%;
+  height: auto;
+}
+
+.thesis-img-block img {
+  width: 100%;
+}
+
+/*========================== Footer  ========================= */
+
+footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  background-color: #abc4fc;
+  justify-content: space-between;
+}
+
+#terms a {
+  padding-left: 1.5rem;
+}
+
 /*==========================  MOBILE  ========================= */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 920px) {
   #mobile-nav {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
   #logo {
@@ -307,7 +376,7 @@ h2.header {
     overflow: hidden;
   }
   aside {
-    flex-flow: wrap column;
+    flex-flow: column wrap;
     justify-content: center;
     width: 100%;
   }
@@ -394,18 +463,4 @@ h2.header {
     padding-left: 5rem;
     padding-bottom: 1rem;
   }
-
-  /*.course-cards .card-text {
-    width: 100%;
-  }
-
-  .card-text  {
-    display: flex;
-    align-items: baseline;
-  }
-
-  .card-text h5 {
-    flex-flow: column wrap;
-    align-items: baseline;
-  }*/
 }
